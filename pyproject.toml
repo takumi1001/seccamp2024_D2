@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "seccamp2024-d2"
+version = "0.1.0"
+description = "セキュリティキャンプ2024全国大会 D2講義「クラウドソーシングによる学習データ作成と品質管理」のハンズオン資料"
+authors = ["Takumi TAMURA <tamura.takumi.ap@alumni.tsukuba.ac.jp>"]
+license = "LICENSE"
+readme = "README.md"
+packages = [{include = "seccamp2024_d2"}]
+
+[tool.poetry.dependencies]
+python = "<3.13,>=3.9"
+numpy = "<2"
+scikit-learn = "^1.5.1"
+pandas = "^2.2.2"
+crowd-kit = "^1.3.0.post0"
+krippendorff = "^0.7.0"
+jupyterlab = "^4.2.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
